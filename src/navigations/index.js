@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Products from '../screens/Products';
 import Login from '../screens/Login';
 const Stack = createStackNavigator();
-
+ 
 function NavigationApp() {
     return (
       <NavigationContainer>
