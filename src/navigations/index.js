@@ -1,23 +1,20 @@
-import React from 'react'
-import { Provider } from 'react-native-paper'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-import { theme } from '../core/theme'
-import {   
-    LoginScreen,
-  } from '../screens'
+
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Products from '../screens/Products';
+import Login from '../screens/Login';
 
 const Stack = createStackNavigator();
 
-const NavigationApp = () => {
+function NavigationApp() {
     return (
-        <Provider theme={theme}>
-        <NavigationContainer>
-          <Stack.Navigator>                   
-            <Stack.Screen name="LoginScreen" component={LoginScreen} />          
-          </Stack.Navigator>
-        </NavigationContainer>
-      </Provider>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+          <Stack.Screen name="Login" component={Login}/>
+          <Stack.Screen name="Products" component={Products}/>
+        </Stack.Navigator>
+      </NavigationContainer>
     );
   }
 
