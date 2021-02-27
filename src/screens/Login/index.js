@@ -11,7 +11,6 @@ import {
     TouchableOpacity,
     Alert
 } from 'react-native';
-import { ApplicationStyles } from '../../Themes';
 import styles from './styles';
 
 function Login({ navigation }) {
@@ -23,17 +22,13 @@ function Login({ navigation }) {
             return navigation.navigate('Products');
         }
 
-        Alert.alert('Tài khoản hoặc mật khẩu không chính xác.')
+        Alert.alert('Tào khoản hoặc mật khẩu không chính xác.')
     }
 
 	return (
 		<View style={ApplicationStyles.screen.container}>
 			<TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
 				<View style={styles.content}>
-					<Image
-						source={require('../../images/logo.png')}
-						style={styles.logo}
-					></Image>
 					<TextInput
 						style={styles.input}
                         placeholder='Tên tài khoản'

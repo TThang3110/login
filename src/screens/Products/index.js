@@ -1,12 +1,5 @@
 import React, { useContext } from 'react';
 import { View, FlatList, Text } from 'react-native';
-import { ApplicationStyles } from '../../Themes';
-import Header from '../../components/Header';
-import styles from './styles';
-import { Products as dataProducts } from '../../services';
-import Item from './Item';
-import Context from '../Context';
-
 function Products({ navigation }) {
     const [context, setContext] = useContext(Context);
 
