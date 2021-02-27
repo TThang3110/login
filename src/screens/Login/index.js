@@ -17,7 +17,7 @@ function Login({ navigation }) {
 	const [password, setPassword] = useState('');
     
     const handleLogin = () => {
-        if(username.trim() === 'abc' && password.trim() === '123') {
+        if(username.trim() === 'Thang' && password.trim() === '111111') {
             return navigation.navigate('Products');
         }
 

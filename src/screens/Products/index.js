@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { View, FlatList, Text } from 'react-native';
 function Products({ navigation }) {
     const [context, setContext] = useContext(Context);
-
+ 
     const renderBadge = () => {
         let count = 0;
 		if(Object.keys(context).length === 0) {
