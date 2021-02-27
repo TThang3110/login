@@ -11,18 +11,17 @@ import {
     TouchableOpacity,
     Alert
 } from 'react-native';
-import styles from './styles';
 
 function Login({ navigation }) {
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
     
     const handleLogin = () => {
-        if(username.trim() === 'datnguyen' && password.trim() === '12345') {
+        if(username.trim() === 'abc' && password.trim() === '123') {
             return navigation.navigate('Products');
         }
 
-        Alert.alert('Tào khoản hoặc mật khẩu không chính xác.')
+        Alert.alert('Tài khoản hoặc mật khẩu không chính xác.')
     }
 
 	return (

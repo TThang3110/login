@@ -1,13 +1,9 @@
-import React, { useContext, createContext, useState } from 'react';
-import Products from './src/screens/Products';
+
+import React from 'react';
 import NavigationApp from './src/navigations';
-
 export default function App() {
-  const [context, setContext] = useState([])
-
   return (
-    <Context.Provider value={[context, setContext]}>
       <NavigationApp></NavigationApp>
-    </Context.Provider>
   );
 }
+
