@@ -3,12 +3,8 @@ import { Provider } from 'react-native-paper'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { theme } from '../core/theme'
-import {
-    StartScreen,
+import {   
     LoginScreen,
-    RegisterScreen,
-    ForgotPasswordScreen,
-    Dashboard,
   } from '../screens'
 
 const Stack = createStackNavigator();
