@@ -52,7 +52,7 @@ function Products({ navigation }) {
 	return (
 		<View style={styles.waper}>
 			<Header
-				title='Products'
+				title='List'
 			></Header>
 			<FlatList
 				data={data}
